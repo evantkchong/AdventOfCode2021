@@ -10,4 +10,4 @@ def get_portable_filepath(filename: str):
 def file_to_list(filepath: str):
     with open(filepath) as f:
         lines = f.readlines()
-    return [int(line) for line in lines]
+    return lines

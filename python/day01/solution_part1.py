@@ -20,4 +20,5 @@ def count_depth_increase(report_ls: list):
 if __name__ == "__main__":
     filepath = os.path.join(os.path.dirname(os.path.realpath(__file__)), "input.txt")
     report_ls = file_to_list(filepath)
+    report_ls = [int(i) for i in report_ls]
     print(count_depth_increase(report_ls))
